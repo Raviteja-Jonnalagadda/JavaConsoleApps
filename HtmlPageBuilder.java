@@ -22,9 +22,19 @@ import java.util.Set;
 
 public class HtmlPageBuilder {
 
+     /**
+     * Scanner instance for user input.
+     */
 	protected static Scanner sc = new Scanner(System.in);
+     /**
+     * Theme preference for the page ('D' for Dark, 'L' for Light).
+     */
 	protected static String page_theam = null;
+     /**
+     * Background color of the page.
+     */
 	protected static String bgcolor = null;
+	
 	protected static String txcolor = null;
 	protected static int opt_num = 1;
 	protected static LinkedHashMap<String, String> field_options = new LinkedHashMap<String, String>();
@@ -368,7 +378,12 @@ public class HtmlPageBuilder {
 		slowprint(FINAL_HTML_PAGE,2);
 
 	}
-
+    /**
+     * Main method to run the HTML page builder application.
+     *
+     * @param args Command line arguments (not used).
+     * @throws InterruptedException If the thread sleep is interrupted.
+     */
 	public static void main(String[] args) throws InterruptedException {
 		BuilderWelcome();
 	}
