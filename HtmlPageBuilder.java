@@ -1,3 +1,18 @@
+/**
+ * The HtmlPageBuilder class provides methods to dynamically generate HTML pages
+ * with various form elements based on user input. It supports creating different
+ * input fields, options, redirections, and themes for the generated HTML page.
+ * 
+ * <p>This class is designed as a console-based application where users can input
+ * field types, names, options, and themes to build a complete HTML form page.</p>
+ * 
+ * <p>Usage flow includes: selecting field types, entering field names, configuring
+ * options, choosing themes, and finally generating the HTML page output.</p>
+ * 
+ * <p>Note: This class uses static methods and variables for simplicity and state management.</p>
+ * @author Raviteja J
+ */
+
 package com.jconsole.app;
 
 import java.util.LinkedHashMap;
