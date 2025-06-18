@@ -10,7 +10,9 @@
  * options, choosing themes, and finally generating the HTML page output.</p>
  * 
  * <p>Note: This class uses static methods and variables for simplicity and state management.</p>
+ *
  * @author Raviteja J
+ * @contact raviteja032766@gmail.com
  */
 
 package com.jconsole.app;
