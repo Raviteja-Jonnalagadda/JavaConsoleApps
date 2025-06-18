@@ -289,6 +289,12 @@ public class HtmlPageBuilder {
 		}
 	}
 
+     /**
+     * Initiates the HTML page building process by prompting user input for fields and options.
+     * Handles the main application flow.
+     *
+     * @return A string message indicating the result of the build process.
+     */
 	public static String BuildStater() {
 		LinkedHashMap<String, String> hm = new LinkedHashMap<String, String>();
 		String result = null;
@@ -344,6 +350,9 @@ public class HtmlPageBuilder {
 		return result;
 	}
 
+     /**
+     * Displays a welcome message and instructions to the user, then starts the page building process.
+     */
 	public static void BuilderWelcome(){
 		String t1 = "Welcome to HTML PAGE BUILDER \n This is a Java Console Application that runs on commands to generate HTML pages (Pages with Table tags for better arrangement) \n Follow the codes in the below table enter the required field code to get a required field \n Dont enter spaces for field code and field names for better output \n ";
 		slowprint(t1,15);
