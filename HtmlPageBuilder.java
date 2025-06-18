@@ -170,6 +170,12 @@ public class HtmlPageBuilder {
 		}
 	}
 
+     /**
+     * Generates the complete HTML page based on the provided elements map.
+     *
+     * @param elements A LinkedHashMap where keys are field names and values are field types.
+     * @return The complete HTML page as a String.
+     */
 	public static String pagegenerater(LinkedHashMap<String, String> elements) {
 		if (elements.isEmpty() || elements.size() <= 0) {
 			System.out.println("Pass the valid date to process");
@@ -192,6 +198,13 @@ public class HtmlPageBuilder {
 		return sb.toString();
 	}
 
+     /**
+     * Builds HTML options for select or radio input fields based on user input.
+     *
+     * @param fld_type The field type ("IPSL" for select, "IPRD" for radio).
+     * @param fld_name The name of the field.
+     * @return A string containing the HTML options.
+     */
 	public static String optionsbuilder(String fld_type, String fld_name) {
 		LinkedList<String> ls = new LinkedList<String>();
 		System.out.println("Enter options with ',' saparater (exp :- option1,option2,option3) ");
