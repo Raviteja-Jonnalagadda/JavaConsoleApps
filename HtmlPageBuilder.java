@@ -229,6 +229,13 @@ public class HtmlPageBuilder {
 		return selectoptionsBuilder.toString();
 	}
 
+     /**
+     * Builds HTML for redirection elements such as anchor tags or images.
+     *
+     * @param fld_type The field type ("IPA" for anchor, "IPI" for image).
+     * @param fld_name The name of the field.
+     * @return A string containing the HTML element.
+     */
 	public static String redirectionbuilder(String fld_type, String fld_name) {
 		System.out.println(
 				"Enter the file name with path (exp : - C:\\Users\\BI50516\\Pictures\\error1.png(for image) or E:/Ravi/Compiler/Live-HTML__CSS__JS-Editor.html (for anchor tag) ");
@@ -248,7 +255,13 @@ public class HtmlPageBuilder {
 		}
 		return field_str;
 	}
-
+	
+    /**
+     * Converts a field name to a URL-friendly or HTML ID-friendly string by replacing spaces with underscores.
+     *
+     * @param fld_name The original field name.
+     * @return The modified field name suitable for HTML ID or URL usage.
+     */
 	public static String fieldspaceremover(String fld_name) {
 		char[] a = fld_name.toCharArray();
 		String lab_name = null;
@@ -265,6 +278,10 @@ public class HtmlPageBuilder {
 
 	}
 
+     /**
+     * Sets the theme for the HTML page based on user preference.
+     * Adjusts background and text colors accordingly.
+     */
 	public static void theambuilder() {
 		System.out.println("Enter your theam preference \n[D] Dark Theam \n[L] Light Theam");
 		page_theam = sc.next();
@@ -276,7 +293,13 @@ public class HtmlPageBuilder {
 			txcolor = "white";
 		}
 	}
-	
+
+     /**
+     * Prints a string to the console with a delay between each character to simulate slow printing.
+     *
+     * @param printval The string to print.
+     * @param time The delay in milliseconds between each character.
+     */
 	public static void slowprint(String printval , int time)  {
 		for (int i = 0; i < printval.length(); i++) {
 			System.out.print(printval.charAt(i));
