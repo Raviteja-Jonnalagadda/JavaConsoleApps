@@ -34,14 +34,40 @@ public class HtmlPageBuilder {
      * Background color of the page.
      */
 	protected static String bgcolor = null;
-	
+
+     /**
+     * Text color of the page.
+     */
 	protected static String txcolor = null;
+     /**
+     * Option number counter used in options builder.
+     */
 	protected static int opt_num = 1;
+     /**
+     * Map of field names to their options or HTML snippets.
+     */
 	protected static LinkedHashMap<String, String> field_options = new LinkedHashMap<String, String>();
+     /**
+     * StringBuilder used for constructing field names.
+     */
 	protected static StringBuilder fieldnamebuilder = new StringBuilder();
+     /**
+     * Display value for certain fields.
+     */
 	protected static String dispval = null;
+     /**
+     * Input value for certain fields.
+     */
 	protected static String inval = null;
 
+
+     /**
+     * Processes a form field based on its type and name, returning the corresponding HTML snippet.
+     *
+     * @param fldtyp The type of the field (e.g., "IPT", "IPN", etc.).
+     * @param fldnam The name of the field.
+     * @return A string containing the HTML representation of the form field.
+     */
 	public static String commandprocesser(String fldtyp, String fldnam) {
 
 		if (fldtyp.isEmpty() || fldtyp.equals(" ") || fldtyp.equals(null)) {
